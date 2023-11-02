@@ -1,0 +1,9 @@
+@import '../../styles/vars';
+
+.hero_section {
+    height: calc(100dvh - $nav-height);
+    p {
+        color: #2D3436;
+    }
+    // background-color: lightblue;
+}
