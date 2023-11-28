@@ -7,9 +7,9 @@ const AboutSection = () => {
   const { data, isLoading } = useAboutMeApi();
   console.log(data);
   return (
-    <main className="pt-32 flex" id="about">
+    <main className="pt-32 flex flex-col md:flex-row" id="about">
       {/* text section */}
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <h4 className="text-4xl font-bold mb-5">
           {!isLoading && data.greeting.en}
         </h4>
@@ -23,9 +23,9 @@ const AboutSection = () => {
           READ MORE
         </Link>
       </div>
-      <div className="w-1/2 flex justify-end">
+      <div className="md:w-1/2 flex justify-end">
         {/* image container */}
-        <div className="w-[300px] h-[400px] bg-purple-100 rounded-xl"></div>
+        <div className="md:w-[300px] w-full h-[400px] bg-purple-100 rounded-xl"></div>
       </div>
       {/* photo section */}
     </main>

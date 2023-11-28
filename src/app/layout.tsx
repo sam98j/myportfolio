@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`px-32`}>
+      <body className={`md:px-32 px-8`}>
         <NavBar />
         {children}
       </body>

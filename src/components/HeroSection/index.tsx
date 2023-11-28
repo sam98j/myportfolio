@@ -12,10 +12,10 @@ const HeroSection = () => {
   const { data } = useHeroSectionApi();
   return (
     <div className={`${styles.hero_section} flex`}>
-      <div
-        className={`h-full flex justify-center flex-col w-1/2 sm:max-md:w-full`}
-      >
-        <h3 className={`text-6xl font-bold`}>{data && data.greeting.en}</h3>
+      <div className={`h-full flex justify-center flex-col md:w-1/2 w-full`}>
+        <h3 className={`text-4xl md:text-6xl font-bold`}>
+          {data && data.greeting.en}
+        </h3>
         <h4 className={`text-purple-700 text-4xl font-bold mb-7`}>
           {data && data.titiles[0].en}
         </h4>
@@ -38,20 +38,20 @@ const HeroSection = () => {
           </Link>
           <Link
             href={'/'}
-            className="border-2 border-purple-400 py-2 px-4 block rounded-xl font-bold"
+            className="border-2 border-purple-400 px-4 rounded-xl flex justify-center items-center md:font-bold"
           >
             GET IN TOUCH
           </Link>
           <Link
             href={'/'}
-            className="border-2 border-purple-400 py-2 px-4 block rounded-xl font-bold"
+            className="border-2 border-purple-400 px-4 rounded-xl flex justify-center items-center  md:font-bold"
           >
             RESUME
           </Link>
         </div>
       </div>
       {/* hero svg */}
-      <div className={`w-1/2 flex items-center justify-end sm:max-md:hidden`}>
+      <div className={`w-1/2 md:flex items-center justify-end hidden`}>
         <Image src={ImageSVG} alt="svg" className="w-3/4" />
       </div>
       <ScrollerBtn />
