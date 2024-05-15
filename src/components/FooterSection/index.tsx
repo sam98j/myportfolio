@@ -10,7 +10,7 @@ const FooterSection = () => {
       {/* let's connect */}
       {/* section a */}
       <div className="flex-grow md:w-1/2">
-        <h5 className="text-4xl font-bold">Let's connect</h5>
+        <h5 className="text-4xl font-bold">Let&apos;s connect</h5>
         <p className="my-5 bg-gray-100 md:w-fit p-3 rounded-xl">
           Shoot me email to chat about my work or just like to say hey 👋
         </p>
