@@ -8,6 +8,11 @@ const nextConfig = {
         port: '4000',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.portfolio.samapps.xyz',
+        pathname: '**',
+      },
     ],
   },
 };
